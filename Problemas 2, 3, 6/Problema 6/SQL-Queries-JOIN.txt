@@ -1,0 +1,10 @@
+JOIN entre las tablas en el campo employee_id y id
+SELECT Informacion.id, name, age, address, salary, Departamento.dept FROM Informacion INNER JOIN Departamento ON Departamento.emp_id = Informacion.id
+
+CROSS JOIN entre ambas tablas
+SELECT * FROM Informacion CROSS JOIN Departamento WHERE Informacion.id = Departamento.id
+SELECT * FROM Informacion CROSS JOIN Departamento 
+
+LEFT OUTER JOIN ambas tablas
+SELECT * FROM Informacion LEFT OUTER JOIN Departamento WHERE Informacion.id = Departamento.id
+SELECT * FROM Informacion LEFT OUTER JOIN Departamento
