@@ -20,7 +20,7 @@ def verifyArg(): #Numero adecuado de argumentos
     return True if(len(sys.argv) - 1 == ARG_NUM) else False
 
 def bresenham( punto_a, punto_b ): #Calculo del trayectoria de linea - Algoritmo de Bresenham
-    #Delta Y, Delta X, Delta error
+    #Delta Y, Delta X, error
     dy = int(punto_b.y ) - int( punto_a.y )
     dx = int( punto_b.x ) - int( punto_a.x )
     sx = 1 if( punto_a.x < punto_b.x ) else -1
