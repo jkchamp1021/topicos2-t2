@@ -39,11 +39,11 @@ def bresenham( punto_a, punto_b ): #Calculo del trayectoria de linea - Algoritmo
         if(err_2 <= dx):
             err += dx
             y = y + sy
-        print("{} , {}, - {} <= {} aumenta y en y - {} >= {} aumenta x".format(x,y, err_2,dx,err_2,dy))
+        print("Punto: {} , {}".format(x,y))
 
 archivo = "euclid.csv" if(verifyArg()) else sys.argv[1]
 
-with open(archivo,'rU') as csv_archivo:
+with open(archivo,'r') as csv_archivo:
     csv_data = csv.reader(csv_archivo, delimiter=',', dialect=csv.excel_tab)
     lineas = 0
     for row in csv_data:
